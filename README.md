@@ -3,6 +3,7 @@ Our paper "Unbiasing Review Ratings with Tendency based Collaborative Filtering"
 ## Dataset
   ### We have tested the model on two datasets
   [Amazon electronics dataset (5 core)](https://jmcauley.ucsd.edu/data/amazon/)
+  
   [Amazon fine food review dataset](https://www.kaggle.com/snap/amazon-fine-food-reviews)
 
 ## Implementation details
