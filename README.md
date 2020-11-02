@@ -1,4 +1,4 @@
-Our paper "Unbiasing Review Ratings with Tendency based Collaborative Filtering" can be found [here] (will update after the paper is published)
+Implementation of [Unbiasing Review Ratings with Tendency based Collaborative Filtering] (link will be updated after the paper is published)
 
 ## Dataset
   ### We have tested the model on two datasets
