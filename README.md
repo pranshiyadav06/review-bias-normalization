@@ -1,6 +1,8 @@
 This repository contains the source code to reproduce the results of the [AACL-IJCNLP'20](http://www.aacl2020.org/)
 paper [Unbiasing Review Ratings with Tendency based Collaborative Filtering](link will be updated after the paper is published).
 
+Appendix contains the derivation of the reverse tendency function used in our paper.
+
 ## Dataset
   ### We have tested the model on two datasets
   [Amazon electronics dataset (5 core)](https://jmcauley.ucsd.edu/data/amazon/)
