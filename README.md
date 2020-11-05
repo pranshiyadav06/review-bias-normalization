@@ -44,7 +44,7 @@ data_struct.py
   $ python data_struct.py clean_data.csv
   ```
 
-pruning.py (the minimum value in this file is 15, and should be updated for other datasets)
+pruning.py (the minimum value for pruning should be updated for other datasets. In the file it is set at 12)
   - Input: clean_data.csv data file (format: ProductId, UserId, Summary, Text, Score)
   - Output: pruned_data.csv, extra.csv (not on this data) data files(format: ProductId, UserId, Summary, Text, Score)
   - running command: 
