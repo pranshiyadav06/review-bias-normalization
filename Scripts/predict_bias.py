@@ -86,7 +86,7 @@ def main():
     print('MSE: ',mean_squared_error(test_data['Biased_Score'], test_data['Score']))
     print('MAE: ',mean_absolute_error(test_data['Biased_Score'], test_data['Score']))
     print('RMSE: ',(mean_squared_error(test_data['Biased_Score'], test_data['Score']))**0.5)
-    print('Standard Deviation: ',np.std(test_data['Biased_Score']- test_data['Score']))
+    print('Standard Deviation: ',np.std(test_data['Biased_Score']))
 
     test_data.to_csv(bias_file, index=False)
 
