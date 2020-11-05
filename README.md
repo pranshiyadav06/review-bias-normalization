@@ -1,4 +1,5 @@
-Implementation of [Unbiasing Review Ratings with Tendency based Collaborative Filtering] (link will be updated after the paper is published)
+This repository contains the source code to reproduce the results of the [AACL-IJCNLP'20](http://www.aacl2020.org/)
+paper [Unbiasing Review Ratings with Tendency based Collaborative Filtering](link will be updated after the paper is published).
 
 ## Dataset
   ### We have tested the model on two datasets
@@ -8,18 +9,17 @@ Implementation of [Unbiasing Review Ratings with Tendency based Collaborative Fi
 
 ## Implementation details
 
-All input and output file paths are to be given in the command window, except dictionary file (user_dict and item_dict) path.
-
-### The order of files to be implemented
+All input and output file paths are to be given in the command window, except dictionary file (user_dict and item_dict) path. The scripts should be implemented in the following order
 
 json_to_csv.py
-  - Input: reviews_Electronics_5.json data file (format: Id,ProductId,UserId,ProfileName,HelpfulnessNumerator,HelpfulnessDenominator,Score,Time,Summary,Text)
+  - Input: Input data_file_name.json (eg. reviews_Electronics_5.json) data file (format: Id,ProductId,UserId,ProfileName,HelpfulnessNumerator,HelpfulnessDenominator,Score,Time,Summary,Text)
   - Output: data.csv data file (format: Id,ProductId,UserId,ProfileName,HelpfulnessNumerator,HelpfulnessDenominator,Score,Time,Summary,Text)
   - running command: 
   ```sh
   $ python json_to_csv.py reviews_Electronics_5.json data.csv
   ```
 
+### Preprocessing
 preprocess.py
   - Input: data.csv data file (format: Id,ProductId,UserId,ProfileName,HelpfulnessNumerator,HelpfulnessDenominator,Score,Time,Summary,Text)
   - Output: preprocessed_data.csv data file (format: Id,ProductId,UserId,ProfileName,HelpfulnessNumerator,HelpfulnessDenominator,Score,Time,Summary,Text)
@@ -68,6 +68,7 @@ data_struct.py
   $ python data_struct.py pruned_data.csv
   ```
 
+### Normalization of review score
 unbias.py
   - Input: test_data.csv data file (format: ProductId, UserId, Summary, Text, Score)
   - Output: unbiased_data.csv data file (format: ProductId, UserId, Summary, Text, Score, Unbiased_Score)
@@ -75,7 +76,7 @@ unbias.py
   ```sh
   $ python unbias.py train_data.csv.csv unbiased_data.csv
   ```
-
+### Prediction of review score using reverse tendency function
 predict_bias.py
   - Input: unbiased_data.csv data file (format: ProductId, UserId, Summary, Text, Score, Unbiased_Score)
   - Output: predicted_data.csv data file (format: ProductId, UserId, Summary, Text, Score, Unbiased_Score, Biased_Score)
@@ -85,4 +86,12 @@ predict_bias.py
   ```
 
 ### Analysis of predicted review score
-Further analysis on the data is done in iPython notebooks for better visualization of results. The location for input and output files should be changed accordingly.
+Further analysis on the data is done in iPython notebooks for better visualization of result. The location for input and output files should be changed accordingly. The notebook was written in Google Colab and has to be modified to run on other softwares
+
+## Citing this Work
+
+If you use this method in your research, please cite:
+
+```
+
+```
