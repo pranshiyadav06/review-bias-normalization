@@ -1,5 +1,5 @@
 This repository contains the source code to reproduce the results of the [AACL-IJCNLP'20](http://www.aacl2020.org/)
-paper [Unbiasing Review Ratings with Tendency based Collaborative Filtering](link will be updated after the paper is published).
+paper [Unbiasing Review Ratings with Tendency based Collaborative Filtering](https://vgupta123.github.io/docs/UBR_Paper.pdf).
 
 Appendix contains the derivation of the reverse tendency function used in our paper.
 
