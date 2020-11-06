@@ -1,4 +1,4 @@
-This repository contains the source code to reproduce the results of the [AACL-IJCNLP'20](http://www.aacl2020.org/)
+This repository contains the source code to reproduce the results of the [AACL-IJCNLP'20](https://aacl2020-srw.github.io/)
 paper [Unbiasing Review Ratings with Tendency based Collaborative Filtering](https://vgupta123.github.io/docs/UBR_Paper.pdf).
 
 Appendix contains the derivation of the reverse tendency function used in our paper.
