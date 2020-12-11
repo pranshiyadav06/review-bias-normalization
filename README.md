@@ -1,5 +1,5 @@
 This repository contains the source code to reproduce the results of the [AACL-IJCNLP'20](https://aacl2020-srw.github.io/)
-paper [Unbiasing Review Ratings with Tendency based Collaborative Filtering](https://vgupta123.github.io/docs/UBR_Paper.pdf).
+paper [Unbiasing Review Ratings with Tendency based Collaborative Filtering](https://www.aclweb.org/anthology/2020.aacl-srw.8).
 
 Appendix contains the derivation of the reverse tendency function used in our paper.
 
@@ -95,5 +95,19 @@ Further analysis on the data is done in iPython notebooks for better visualizati
 If you use this method in your research, please cite:
 
 ```
-Will be updated after the paper is published.
+@inproceedings{yadav-etal-2020-unbiasing,
+    title = "Unbiasing Review Ratings with Tendency Based Collaborative Filtering",
+    author = "Yadav, Pranshi  and
+      Yadav, Priya  and
+      Nokhiz, Pegah  and
+      Gupta, Vivek",
+    booktitle = "Proceedings of the 1st Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 10th International Joint Conference on Natural Language Processing: Student Research Workshop",
+    month = dec,
+    year = "2020",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://www.aclweb.org/anthology/2020.aacl-srw.8",
+    pages = "50--56",
+    abstract = "User-generated contents{'} score-based prediction and item recommendation has become an inseparable part of the online recommendation systems. The ratings allow people to express their opinions and may affect the market value of items and consumer confidence in e-commerce decisions. A major problem with the models designed for user review prediction is that they unknowingly neglect the rating bias occurring due to personal user bias preferences. We propose a tendency-based approach that models the user and item tendency for score prediction along with text review analysis with respect to ratings.",
+}
 ```
